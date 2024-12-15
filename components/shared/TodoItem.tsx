@@ -26,7 +26,12 @@ export const TodoItem: React.FC<Props> = ({
 
   return (
     <li className={cn(className, 'border-b last:border-0 pl-4')}>
-      <label className="group flex items-center cursor-pointer py-4">
+      <label
+        className={cn(
+          'group flex items-center cursor-pointer py-4',
+          completed ? 'line-through text-zinc-400' : '',
+        )}
+      >
         <Checkbox
           id={id}
           checked={completed}
