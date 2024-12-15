@@ -13,7 +13,7 @@ export const Control: React.FC<Props> = ({ className }) => {
 
   const filters: { label: string; value: 'all' | 'active' | 'completed' }[] = [
     { label: 'All', value: 'all' },
-    { label: 'Active', value: 'active' },
+    // { label: 'Active', value: 'active' },
     { label: 'Completed', value: 'completed' },
   ];
 
